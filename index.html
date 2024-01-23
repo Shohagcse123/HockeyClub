@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HockeyClub</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/e1df079133.js" crossorigin="anonymous"></script>
-<script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HockeyClub</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e1df079133.js" crossorigin="anonymous"></script>
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -21,132 +22,198 @@
     }
   </script>
 
-<style>
-    .font_size{
-        font-family: 'Manrope', sans-serif;
+  <style>
+    .font_size {
+      font-family: 'Manrope', sans-serif;
     }
-    .home{
-        color:#FF4240 !important ;
+
+    .home {
+      color: #FF4240 !important;
     }
-    
-</style>
+  </style>
 </head>
+
 <body class="font_size">
-    <header class="container mx-auto">
-        <nav class="">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  bg-base-100 rounded-box w-52">
-                      
-                      <li ><a class="home">Home</a></li>
-                      <li><a href="">About</a></li>
-                      <li><a href="">Pages</a></li>
-                      <li><a href="">Blog</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-2xl  lg:text-3xl font-extrabold text-[#131318]">Hockey’s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    
-                      <li><a>Home</a></li>
-                      <li><a href="">About</a></li>
-                      <li><a href="">Pages</a></li>
-                      <li><a href="">Blog</a></li>
-                      <li><a>Contact</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end flex   gap-6 text-3xl">
-                    <i class=" fa-solid fa-magnifying-glass "></i>
-                  <a class="btn btn-ghost  bg-[#FF4240] px-6 text-white text-xl rounded-md">Get Ticket</a>
-                </div>
-              </div>
-        </nav>
-        <section class="  container mx-auto mt-14">
-            <div class="carousel ml-6   lg:w-full h-[550px]  relative">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class=" h-full w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="Images/2.jpeg" class=" h-ful w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="Images/3.png" class=" h-full w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-               
-              </div>
+  <header class="container mx-auto">
+    <nav class="">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  bg-base-100 rounded-box w-52">
 
-              <!-- Extra part -->
-              <div class="bg-black rounded-2xl  mt-5 ml-6   lg:absolute left-1/2 p-8 w-[566px] h-[165px]   bottom-16 ">
-                <h3 class="text-white text-xl font-extrabold">Meet all the heroes from the field</h3>
-                <p class="py-4 text-base font-semibold text-[#ffffff ] opacity-60">Field heroes, armed with unwavering determination and resilience, navigate the challenges<br> of their domains, 
-                     from healthcare warriors battling on the front.</p>
-              </div>
-
-        </section>
-    </header>
-    <main>
-<section class=" container mx-auto ">
-  <h3 class="text-center text-4xl font-extrabold mt-32">Professional Hockeys Club</h3>
-  <p class="text-center text-base font-semibold text-[#13131899] py-5">The Allen Americans Professional Hockey Club is a member of the ECHL, the world’s top <br>
-     Double-A hockey league, and is the affiliate of the National Hockey League’s (NHL) Ottawa Senators.</p>
-     <div class="">
-
-      <div class="grid grid-cols-1 gap-40 mt-10 lg:grid-cols-4">
-        <div class="">
-          <div class="radial-progress transform rotate-180 text-red-600  relative left-[100px] lg:left-14 "   style="--value:87; " role="progressbar">
-            <p class="transform -rotate-180 "><span class="text-black font-bold">87%</span></p>
-           </div>
-          <h3 class="text-xl font-semibold text-center py-2">Prayer Facility</h3>
-          <p class="text-base text-[#13131899] text-center text-justify py-2">Implementing a prayer facility in a hockey club <br>
-             involves creating a designated space for prayer </p>
-
+              <li><a class="home">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl  lg:text-3xl font-extrabold text-[#131318]">Hockey’s</a>
         </div>
-        <div class="">
-          <div class="radial-progress transform rotate-90 text-green-400 relative left-[100px] lg:left-14 "   style="--value:95; " role="progressbar " >
-            <p class="transform -rotate-90 "><span class="text-black font-bold">95%</span></p>
-           </div>
-          <h3 class="text-xl font-semibold text-center py-2 ">Experienced Coach</h3>
-          <p class="text-base text-[#13131899] text-center text-justify py-2">
-            An experienced coach holds significant importance for a sports team across various aspects.</p>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
 
+            <li><a>Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
         </div>
-        <div class="">
-          <div class="radial-progress transform rotate-90 text-orange-400 relative left-[100px] lg:left-14  "   style="--value:90; " role="progressbar " >
-            <p class="transform -rotate-90 "><span class="text-black font-bold">90%</span></p>
-           </div>
-          <h3 class="text-xl font-semibold text-center py-2 ">Senior Player</h3>
-          <p class="text-base text-[#13131899] text-center text-justify py-2">Senior players are always best service porvide for team. </p>
-
+        <div class="navbar-end flex   gap-6 text-3xl">
+          <i class=" fa-solid fa-magnifying-glass "></i>
+          <a class="btn btn-ghost  bg-[#FF4240] px-6 text-white text-xl rounded-md">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <section class="  container mx-auto mt-14">
+      <div class="carousel ml-6   lg:w-full h-[550px]  relative">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class=" h-full w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/2.jpeg" class=" h-ful w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/3.png" class=" h-full w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
 
-        <div class="">
-          <div class="radial-progress transform rotate-90 text-blue-400 relative left-[100px] lg:left-14 "   style="--value:80; " role="progressbar " >
-            <p class="transform -rotate-90 "><span class="text-black font-bold">80%</span></p>
-           </div>
-          <h3 class="text-xl font-semibold text-center py-2">Prayer Ground</h3>
-          <p class="text-base text-[#13131899] text-center text-justify py-2">The field hockey ground has specific markings and features that are crucial for gameplay.</p>
+      </div>
+
+      <!-- Extra part -->
+      <div class="bg-black rounded-2xl  mt-5 ml-6   lg:absolute left-1/2 p-8 w-[566px] h-[165px]   bottom-16 ">
+        <h3 class="text-white text-xl font-extrabold">Meet all the heroes from the field</h3>
+        <p class="py-4 text-base font-semibold text-[#ffffff ] opacity-60">Field heroes, armed with unwavering
+          determination and resilience, navigate the challenges<br> of their domains,
+          from healthcare warriors battling on the front.</p>
+      </div>
+
+    </section>
+  </header>
+  <main>
+    <section class=" container mx-auto ">
+      <h3 class="text-center text-2xl whitespace-nowrap   lg:text-4xl font-extrabold mt-32">Professional Hockeys Club
+      </h3>
+      <p class="text-center text-base font-semibold text-[#13131899] py-5">The Allen Americans Professional Hockey Club
+        is a member of the ECHL, the world’s top <br>
+        Double-A hockey league, and is the affiliate of the National Hockey League’s (NHL) Ottawa Senators.</p>
+      <div class="">
+
+        <div class="grid grid-cols-1 gap-40 mt-10 lg:grid-cols-4">
+          <div class="">
+            <div class="radial-progress transform rotate-180 text-red-600  relative left-[100px] lg:left-14 "
+              style="--value:87; " role="progressbar">
+              <p class="transform -rotate-180 "><span class="text-black font-bold">87%</span></p>
+            </div>
+            <h3 class="text-xl font-semibold text-center py-2">Prayer Facility</h3>
+            <p class="text-base text-[#13131899] text-center text-justify py-2">Implementing a prayer facility in a
+              hockey club <br>
+              involves creating a designated space for prayer </p>
+
+          </div>
+          <div class="">
+            <div class="radial-progress transform rotate-90 text-green-400 relative left-[100px] lg:left-14 "
+              style="--value:95; " role="progressbar ">
+              <p class="transform -rotate-90 "><span class="text-black font-bold">95%</span></p>
+            </div>
+            <h3 class="text-xl font-semibold text-center py-2 ">Experienced Coach</h3>
+            <p class="text-base text-[#13131899] text-center text-justify py-2">
+              An experienced coach holds significant importance for a sports team across various aspects.</p>
+
+          </div>
+          <div class="">
+            <div class="radial-progress transform rotate-90 text-orange-400 relative left-[100px] lg:left-14  "
+              style="--value:90; " role="progressbar ">
+              <p class="transform -rotate-90 "><span class="text-black font-bold">90%</span></p>
+            </div>
+            <h3 class="text-xl font-semibold text-center py-2 ">Senior Player</h3>
+            <p class="text-base text-[#13131899] text-center text-justify py-2">Senior players are always best service
+              porvide for team. </p>
+
+          </div>
+
+          <div class="">
+            <div class="radial-progress transform rotate-90 text-blue-400 relative left-[100px] lg:left-14 "
+              style="--value:80; " role="progressbar ">
+              <p class="transform -rotate-90 "><span class="text-black font-bold">80%</span></p>
+            </div>
+            <h3 class="text-xl font-semibold text-center py-2">Prayer Ground</h3>
+            <p class="text-base text-[#13131899] text-center text-justify py-2">The field hockey ground has specific
+              markings and features that are crucial for gameplay.</p>
+
+          </div>
 
         </div>
 
-      
+      </div>
+
+    </section>
+
+    <section class="container mx-auto mt-28">
+      <h3 class="text-center text-3xl font-extrabold">Program Sections</h3>
+      <p class="text-center mt-6"> A sports program could refer to various things, such as a television or radio program
+        covering sports, <br> a training program for athletes, or an organized series of sports events. </p>
+
+
+
+
+      <div class="grid grid-cols-4 ">
+
+        <div class="card w-96 bg-base-100 image-full grid col-span-2 ">
+          <figure> <img src="Images/2.png" class="w-full h-full" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Junior Programm</h2>
+            <p class="text-justify  text-base">Establishing a junior program is a great way <br> to promote the sport
+              among younger individuals.</p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-primary bg-[#FF4240] border-none text-white px-2 py-5 w-32">Register Now!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 image-full grid col-span-2  ">
+          <figure> <img src="Images/3.png" class="h-full w-full" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Tenager Programm</h2>
+            <p class="text-justify  text-base">Determine the specific age range that falls <br> under the "teenager"
+              category for your program.</p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-primary bg-[#FF4240] border-none text-white px-2 py-5 w-32">Register Now!</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card w-96 bg-base-100 image-full grid  col-span-4 ">
+          <figure> <img src="Images/4.png" class="w-full h-full" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Professional Programm</h2>
+            <p class="text-justify  text-base">Determine the specific age range that falls <br> under the "teenager"
+              category for your program.</p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-primary bg-[#FF4240] border-none text-white px-2 py-5 w-32">Register Now!</button>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
@@ -154,12 +221,116 @@
 
 
 
-     </div>
+    </section>
+    <!-- New Products -->
+    <section class="container mx-auto my-20">
+      <div class=" flex">
 
-</section>
+        <img src="Images/5.png" alt="">
 
-    </main>
-    <footer></footer>
-    
+
+
+
+        <div class="flex">
+          <i class="fa-solid fa-star text-orange-400 flex items-center  justify-center"></i>
+          <p>5.0</p>
+          <i class="fa-regular fa-eye flex items-center  justify-center  "></i>
+          <p class="whitespace-nowrap">20</p>
+          <i class="fa-regular fa-heart flex items-center  justify-center "></i>
+          <p class="whitespace-nowrap">200</p>
+
+        </div>
+
+
+
+
+      </div>
+
+    </section>
+
+    <section class="container mx-auto">
+
+      <h3 class="text-center text-3xl font-extrabold">Client Question</h3>
+      <p class="text-center mt-6"> it's typically a compilation of common questions users or clients may have along with
+        their corresponding answers. </p>
+      <div class="flex flex-col lg:flex-row gap-10 mt-20 justify-center items-center">
+        <div class="">
+          <img src="Images/11.png" alt="">
+        </div>
+        <div class="">
+          
+          <!-- first ques -->
+          <div class="collapse collapse-plus bg-base-200 ">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Effective and Cheaper</p>
+            </div>
+          </div>
+           <hr>
+          <!-- second ques -->
+          <div class="collapse collapse-plus bg-base-200 mt-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Hockey Training
+            </div>
+            <div class="collapse-content">
+              <p>Time schedule at 4.00pm to 6.00pm</p>
+            </div>
+          </div>
+          <!-- third ques -->
+          <div class="collapse collapse-plus bg-base-200 mt-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Private Lessons
+            </div>
+            <div class="collapse-content">
+              <p>Obviously private lesson learning this club</p>
+            </div>
+          </div>
+          
+          <div class="collapse collapse-plus bg-base-200 mt-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Ski Touring
+            </div>
+            <div class="collapse-content">
+              <p>Yes</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 mt-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+             Booking
+            </div>
+            <div class="collapse-content">
+              <p>Please visit our website</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 mt-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Pricings
+            </div>
+            <div class="collapse-content">
+              <p>Our product price is vesy chepaer than others product.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+  </main>
+  <footer></footer>
+
 </body>
+
 </html>
