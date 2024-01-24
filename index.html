@@ -67,7 +67,7 @@
           </ul>
         </div>
         <div class="navbar-end flex   gap-6 text-3xl">
-          <i class=" fa-solid fa-magnifying-glass "></i>
+          <i class=" hidden sm:inline-block fa-solid fa-magnifying-glass "></i>
           <a class="btn btn-ghost  bg-[#FF4240] px-6 text-white text-xl rounded-md">Get Ticket</a>
         </div>
       </div>
@@ -109,7 +109,7 @@
     </section>
   </header>
   <main>
-    <section class=" container mx-auto ">
+    <section class=" container mx-auto  ">
       <h3 class="text-center text-2xl whitespace-nowrap   lg:text-4xl font-extrabold mt-32">Professional Hockeys Club
       </h3>
       <p class="text-center text-base font-semibold text-[#13131899] py-5">The Allen Americans Professional Hockey Club
@@ -167,7 +167,7 @@
 
     </section>
 
-    <section class="container mx-auto mt-28">
+    <section class="container mx-auto mt-28 ">
       <h3 class="text-center text-3xl font-extrabold">Program Sections</h3>
       <p class="text-center mt-6"> A sports program could refer to various things, such as a television or radio program
         covering sports, <br> a training program for athletes, or an organized series of sports events. </p>
@@ -175,44 +175,52 @@
 
 
 
-      <div class="grid grid-cols-4 ">
+      <div class="   lg:grid grid-cols-4 gap-6 my-12 ">
 
-        <div class="card w-96 bg-base-100 image-full grid col-span-2 ">
+        <div class="card  image-full mt-6  lg:col-span-2 gap-6 ">
           <figure> <img src="Images/2.png" class="w-full h-full" alt="Shoes" /></figure>
-          <div class="card-body">
+          <div class="card-body ">
+           <div class=" relative text-center lg:top-36">
             <h2 class="card-title">Junior Programm</h2>
             <p class="text-justify  text-base">Establishing a junior program is a great way <br> to promote the sport
               among younger individuals.</p>
-            <div class="card-actions justify-start">
-              <button class="btn btn-primary bg-[#FF4240] border-none text-white px-2 py-5 w-32">Register Now!</button>
+           </div>
+            <div class="card-actions justify-start relative text-center  lg:top-40">
+              <button class=" btn btn-primary bg-[#FF4240] border-none text-white px-2 py-5 w-32">Register Now!</button>
             </div>
           </div>
         </div>
 
-        <div class="card w-96 bg-base-100 image-full grid col-span-2  ">
-          <figure> <img src="Images/3.png" class="h-full w-full" alt="Shoes" /></figure>
+        <div class="card   image-full  mt-6 lg: col-span-2 overflow-hidden gap-6 ">
+          <figure> <img src="Images/3.png" class="w-full h-full" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Tenager Programm</h2>
+            <div class="relative text-center lg:top-36">
+              <h2 class="card-title">Tenager Programm</h2>
             <p class="text-justify  text-base">Determine the specific age range that falls <br> under the "teenager"
               category for your program.</p>
-            <div class="card-actions justify-start">
+            </div>
+            <div class="card-actions justify-start relative text-center lg:top-40">
               <button class="btn btn-primary bg-[#FF4240] border-none text-white px-2 py-5 w-32">Register Now!</button>
             </div>
           </div>
         </div>
 
-
-        <div class="card w-96 bg-base-100 image-full grid  col-span-4 ">
-          <figure> <img src="Images/4.png" class="w-full h-full" alt="Shoes" /></figure>
+        <div class="card  image-full mt-6  lg:h-[450px]  col-span-4 gap-2">
+          <figure> <img src="Images/3.jpg" class="w-full h-full" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Professional Programm</h2>
-            <p class="text-justify  text-base">Determine the specific age range that falls <br> under the "teenager"
-              category for your program.</p>
-            <div class="card-actions justify-start">
+            <div class=" relative text-center lg:top-36">
+              <h2 class="card-title">Professional Programm</h2>
+              <p class="text-justify  text-base">Determine the specific age range that falls <br> under the "teenager"
+                category for your program.</p>
+            </div>
+            <div class="card-actions justify-start relative text-centers lg:top-40">
               <button class="btn btn-primary bg-[#FF4240] border-none text-white px-2 py-5 w-32">Register Now!</button>
             </div>
           </div>
         </div>
+
+
+        
 
       </div>
 
@@ -328,8 +336,55 @@
 
     </section>
 
+    <!-- Get in Touch -->
+
+    <section class="container mx-auto">
+      <h3 class="mt-24 text-center">Get in Touch</h3>
+      <p class="text-center">For contact us you wil send a mail or phone.</p>
+
+    </section>
+
   </main>
-  <footer></footer>
+  
+  <footer class="footer p-10    my-24  bg-[#131318] text-white   h-full ">
+    
+    <nav>
+      <header class=" text-2xl font-extrabold  ">Get In Touch</header> 
+      <p class="text-[#FFFFFF99]">For contact us you wil send a mail or phone.</p>
+      <h5><i class="fa-solid fa-envelope text-[#FFFFFF99]"></i> shohaghassan@gmail.com</h5>
+      <h5><i class="fa-solid fa-phone text-[#FFFFFF99]"></i> (+62) 123-321-543</h5>
+    
+    </nav> 
+    
+    
+    <nav >
+      <header class="  text-base font-bold  ">Company</header> 
+      <a class="link link-hover text-[#FFFFFF99]">About us</a>
+      <a class="link link-hover text-[#FFFFFF99]">Leadership</a>
+      <a class="link link-hover text-[#FFFFFF99]">Careers</a>
+      <a class="link link-hover text-[#FFFFFF99]">News and Article</a>
+      <a class="link link-hover text-[#FFFFFF99]">Legal Notice</a>
+    </nav> 
+
+
+    <nav>
+      <header class=" text-base font-bold  ">Support</header> 
+      <a class="link link-hover text-[#FFFFFF99]">Help Center</a>
+      <a class="link link-hover text-[#FFFFFF99]">FAQ</a>
+      <a class="link link-hover text-[#FFFFFF99]">Ticket Support</a>
+      <a class="link link-hover text-[#FFFFFF99]">Contact Us</a>
+    </nav>
+
+    <nav>
+      <header class=" text-base font-bold  text-center ">Services</header> 
+      <a class="link link-hover text-[#FFFFFF99]">Academy</a>
+      <a class="link link-hover text-[#FFFFFF99]">Group Lessons</a>
+      <a class="link link-hover text-[#FFFFFF99]">Private Lesson</a>
+      <a class="link link-hover text-[#FFFFFF99]">Hockeys for Adult</a>
+    </nav> 
+    
+   
+  </footer>
 
 </body>
 
